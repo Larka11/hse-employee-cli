@@ -20,14 +20,13 @@ namespace Question2HSE
         {
             hseEmployee employee1 = new hseEmployee();
 
-            Console.OutputEncoding = Encoding.GetEncoding(1252);
+            Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine("employee name: " + employee1.empName);
-            Console.WriteLine("employee Number: " + employee1.empNumber);
-            Console.WriteLine("employee Type: " + employee1.empType);
-            Console.WriteLine("employee Yrs Service: " + employee1.empYrsService);
-            Console.WriteLine("employee Salary:" + "€" + employee1.empSalary);
-
+            Console.WriteLine("The heck is yo name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("Well to heck wit chu, " + name);
+            Console.WriteLine("Thank you for choosing the HSE. Press enter to close...");
+            Console.ReadLine();
         }
     }
 }
