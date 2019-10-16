@@ -1,28 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Question2HSE
+﻿namespace Question2HSE
 {
-    class hseEmployee
+    public class HseEmployee
     {
-        public String empName { get; set; }
-        public int empNumber {get; set;}
-        public string empType { get; set; }
-        public int empYrsService;
-        public double empSalary;
+        public double EmpSalary;
+        public int EmpYrsService;
 
-        public hseEmployee( )
+        public HseEmployee()
         {
-            empName = "Becca";
-            empNumber = 100;
-            empType = "Doctor";
-            empYrsService = 20009328;
-            empSalary = 20000;
+            EmpName = "";
+            EmpNumber = 100;
+            EmpType = "";
+            EmpYrsService = 2;
+            EmpSalary = 20000.00;
         }
 
+        public string EmpName { get; set; }
+        public int EmpNumber { get; set; }
+        public string EmpType { get; set; }
     }
+
+    public class Doctor : HseEmployee
+    {
+        public double DocSalary;
+        public int DocYrsService;
+
+        public string DocName { get; set; }
+        public int DocNumber { get; set; }
+        public string DocType { get; set; }
+
+        public Doctor()
+        {
+            DocName = "";
+            DocNumber = 100;
+            DocType = "";
+            DocYrsService = 2;
+            DocSalary = 20000.00;
+        }
+    }
+
 }
+
