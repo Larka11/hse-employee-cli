@@ -1,4 +1,6 @@
-﻿namespace Question2HSE
+﻿using System;
+
+namespace Question2HSE
 {
     public class HseEmployee
     {
@@ -23,9 +25,20 @@
     {
         public double DocSalary;
         public int DocYrsService;
+        private string _docName;
 
-        public string DocName { get; set; }
+        public string DocName
+        {
+            get
+            {
+                String docName = _docName;
+                return docName;
+            }
+            set => _docName = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
         public int DocNumber { get; set; }
+
         public string DocType { get; set; }
 
         public Doctor()
@@ -38,5 +51,23 @@
         }
     }
 
+    public struct RandomEmployees
+    {
+        public string EmpName; 
+        public int Empno;
+        public String Emptype;
+        public int EmpYrsService;
+        public double EmpSalary;
+
+        public RandomEmployees(string name, int number, string type, int service, double salary)
+        {
+            EmpName = name;
+            Empno = number;
+            Emptype = type;
+            EmpYrsService = service;
+            EmpSalary = salary;
+        }
+
+    }
 }
 
