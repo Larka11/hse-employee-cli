@@ -65,9 +65,10 @@ namespace Question2HSE
 
             }
             else { string hiDoc = "I cannot PRESCRIBE for patients!!!"; }
+            return hiDoc;
 
             Console.WriteLine(doctor1.ToString());
-            Console.WriteLine(string hiDoc);
+            Console.WriteLine(hiDoc);
 
             Console.ReadLine();
         }
@@ -76,7 +77,7 @@ namespace Question2HSE
             RandomEmployees randomEmployees1 = new RandomEmployees("Betty", 100, "Doctor", 3, 155_000.00);
             RandomEmployees randomEmployees2 = new RandomEmployees("Bob", 200, "Doctor", 12, 86_000.00);
             RandomEmployees randomEmployees3 = new RandomEmployees("Louis", 300, "Standard", 1, 30_000.00);
-            RandomEmployees randomEmployees4 = new RandomEmployees("Zoey", 400, "Doctor", 8, 262_000.00);
+            RandomEmployees randomEmployees4 = new RandomEmployees("Zoe", 400, "Doctor", 8, 262_000.00);
             RandomEmployees randomEmployees5 = new RandomEmployees("Joe", 500, "Doctor", 2, 70000.00);
             RandomEmployees randomEmployees6 = new RandomEmployees("Abby", 600, "Porter", 7, 152_000.00);
             RandomEmployees randomEmployees7 = new RandomEmployees("Cara", 700, "Standard", 4, 25_000.00);
