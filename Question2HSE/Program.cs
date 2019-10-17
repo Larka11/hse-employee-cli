@@ -15,13 +15,13 @@ namespace Question2HSE
 
             hseProgram.PrintDetails();
             hseProgram.PrintRandomDetails();
+            hseProgram.PrintDocDetails();
         }
 
         private void PrintDetails()
         {
             HseEmployee employee1 = new HseEmployee("",100, "", 0, 00.00);
             HseEmployee employee2 = new HseEmployee(name: "Tony McCarron", 200,"Porter", 4,34576.25);
-            HseEmployee doctor1 = new Doctor();
 
             Console.OutputEncoding = Encoding.UTF8;
 
@@ -52,9 +52,25 @@ namespace Question2HSE
             Console.WriteLine("Enter employee salary :   €" + employee2.EmpSalary);
 
 
-            Console.ReadLine();
         }
 
+        private void PrintDocDetails()
+        {
+            HseEmployee doctor1 = new Doctor(name: "", number: 000, type: "", service: 0, 0.0);
+
+            string Prescribe = "Doctor";
+            if (doctor1.EmpType == Prescribe)
+            {
+                string hiDoc = "I can PRESCRIBE for patients!!! ";
+
+            }
+            else { string hiDoc = "I cannot PRESCRIBE for patients!!!"; }
+
+            Console.WriteLine(doctor1.ToString());
+            Console.WriteLine(string hiDoc);
+
+            Console.ReadLine();
+        }
         private void PrintRandomDetails()
         {
             RandomEmployees randomEmployees1 = new RandomEmployees("Betty", 100, "Doctor", 3, 155_000.00);

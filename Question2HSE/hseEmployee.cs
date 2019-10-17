@@ -19,36 +19,34 @@ namespace Question2HSE
             EmpSalary = salary;
         }
 
+        public override string ToString()
+        {
+            return "Name: " + EmpName + "   Number: " + EmpNumber + "Type: " + EmpType + "years of service: " +
+                   EmpYrsService + "salary: " + EmpSalary;
+        }
     }
 
     public class Doctor : HseEmployee
     {
         public double DocSalary;
         public int DocYrsService;
-        private string _docName;
 
-        public string DocName
-        {
-            get
-            {
-                String docName = _docName;
-                return docName;
-            }
-            set => _docName = value ?? throw new ArgumentNullException(nameof(value));
-        }
-
+        public string DocName { get; set; }
+        
         public int DocNumber { get; set; }
 
         public string DocType { get; set; }
 
-        public Doctor()
+        public Doctor(String name, int number, string type, int service, double salary)
         {
-            DocName = "";
-            DocNumber = 100;
-            DocType = "";
-            DocYrsService = 2;
-            DocSalary = 20000.00;
+            DocName = name;
+            DocNumber = number;
+            DocType = type;
+            DocYrsService = service;
+            DocSalary = salary;
         }
+
+
     }
 
     public struct RandomEmployees
