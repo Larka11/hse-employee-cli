@@ -42,36 +42,43 @@ namespace Question2HSE
             Console.WriteLine("Enter employee type : " + employee1.EmpType);
             Console.WriteLine("Enter employee years of service :  " + employee1.EmpYrsService);
             Console.WriteLine("Enter employee salary :   €" + employee1.EmpSalary);
- 
 
             Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------");
+
             Console.WriteLine("Enter employee name : " + employee2.EmpName);
             Console.WriteLine("Enter employee Number : " + employee2.EmpNumber);
             Console.WriteLine("Enter employee type : " + employee2.EmpType);
             Console.WriteLine("Enter employee years of service :  " + employee2.EmpYrsService);
             Console.WriteLine("Enter employee salary :   €" + employee2.EmpSalary);
-
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------");
 
         }
 
-        private void PrintDocDetails()
-        {
-            HseEmployee doctor1 = new Doctor(name: "", number: 000, type: "", service: 0, 0.0);
+        //private DocCheck(string hiDoc)
+        //{
+        //    string prescribe = "Doctor";
+        //    if (doctor1.EmpType == Prescribe)
+        //    {
+        //        string hiDoc = "I can PRESCRIBE for patients!!! ";
 
-            string Prescribe = "Doctor";
-            if (doctor1.EmpType == Prescribe)
-            {
-                string hiDoc = "I can PRESCRIBE for patients!!! ";
+        //    }
+        //    else
+        //    {
+        //        string hiDoc = "I cannot PRESCRIBE for patients!!!";
+        //    }
 
-            }
-            else { string hiDoc = "I cannot PRESCRIBE for patients!!!"; }
-            return hiDoc;
+        //}
+        //private void PrintDocDetails()
+        //{
+        //    HseEmployee doctor1 = new Doctor(name: "", number: 000, type: "", service: 0, 0.0);
 
-            Console.WriteLine(doctor1.ToString());
-            Console.WriteLine(hiDoc);
+        //Console.WriteLine(doctor1.ToString());
+        //Console.WriteLine(d);
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
         private void PrintRandomDetails()
         {
             RandomEmployees randomEmployees1 = new RandomEmployees("Betty", 100, "Doctor", 3, 155_000.00);
@@ -84,8 +91,10 @@ namespace Question2HSE
             RandomEmployees randomEmployees8 = new RandomEmployees("Ellis", 800, "Porter", 9, 29_000.00);
             RandomEmployees randomEmployees9 = new RandomEmployees("Rob", 900, "Doctor", 11, 205_000.00);
             RandomEmployees randomEmployees10 = new RandomEmployees("Bea", 1000, "Standard", 5, 40_000.00);
+
             Console.WriteLine("-----------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------");
+
             Console.WriteLine("Employee name: " + randomEmployees1.EmpName + " Employee number: " + randomEmployees1.Empno + " Employee type: " + randomEmployees1.Emptype + " Years in Service: " + randomEmployees1.EmpYrsService + " Salary: €" + randomEmployees1.EmpSalary);
             Console.WriteLine("Employee name: " + randomEmployees2.EmpName + " Employee number: " + randomEmployees2.Empno + " Employee type: " + randomEmployees2.Emptype + " Years in Service: " + randomEmployees2.EmpYrsService + " Salary: €" + randomEmployees2.EmpSalary);
             Console.WriteLine("Employee name: " + randomEmployees3.EmpName + " Employee number: " + randomEmployees3.Empno + " Employee type: " + randomEmployees3.Emptype + " Years in Service: " + randomEmployees3.EmpYrsService + " Salary: €" + randomEmployees3.EmpSalary);
