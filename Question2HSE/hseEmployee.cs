@@ -6,19 +6,19 @@ namespace Question2HSE
     {
         public double EmpSalary;
         public int EmpYrsService;
-
-        public HseEmployee()
-        {
-            EmpName = "";
-            EmpNumber = 100;
-            EmpType = "";
-            EmpYrsService = 2;
-            EmpSalary = 20000.00;
-        }
-
         public string EmpName { get; set; }
         public int EmpNumber { get; set; }
         public string EmpType { get; set; }
+
+        public HseEmployee(String name, int number, string type, int service, double salary)
+        {
+            EmpName = name;
+            EmpNumber = number;
+            EmpType = type;
+            EmpYrsService = service;
+            EmpSalary = salary;
+        }
+
     }
 
     public class Doctor : HseEmployee
